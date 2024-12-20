@@ -14,6 +14,7 @@ html {
 }
 
 .bg-img {
+    background-color: #1d1d1d; /* fallback background color */
     background-image: url("martinkraher.jpg");
     height: 100vh;
     width: 100vw;
