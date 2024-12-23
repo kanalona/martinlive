@@ -14,7 +14,7 @@ html {
 }
 
 .bg-img {
-    background-color: #1d1d1d; /* fallback background color */
+    background-color: #000000; /* fallback background color */
     background-image: url("martinkraher.jpg");
     height: 100vh;
     width: 100vw;
@@ -75,7 +75,6 @@ h1 {
     /* toggle this for left and right */
     min-height: 100vh;
     margin: 0 60px;
-    ;
 }
 
 .flex-col {
@@ -88,35 +87,34 @@ h1 {
     flex-direction: row;
 }
 
-.about {
+.about-card {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 3px;
     padding: 40px;
     max-width: 40%;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
 }
 
-.about>h1 {
+.about-card>h1 {
     margin-bottom: 0px;
 }
 
-.about>.profession {
+.about-card>.profession {
     margin-bottom: 20px;
 }
 
-.about>.description {
+.about-card>.description {
     margin-bottom: 10px;
-    ;
 }
 
 @media (max-width: 575px) {
-    .about {
+    .about-card {
         max-width: 100%;
-        padding: 30px;
+        padding: 20px;
     }
 
     .flex-container {
-        margin: 30px;
+        margin: 0 20px;
     }
 
     h1 {
@@ -129,31 +127,31 @@ h1 {
 }
 
 @media (min-width: 576px) {
-    .about {
+    .about-card {
         max-width: 100%;
     }
 }
 
 @media (min-width: 768px) {
-    .about {
+    .about-card {
         max-width: 70%;
     }
 }
 
 @media (min-width: 992px) {
-    .about {
+    .about-card {
         max-width: 60%;
     }
 }
 
 @media (min-width: 1200px) {
-    .about {
+    .about-card {
         max-width: 50%;
     }
 }
 
 @media (min-width: 1400px) {
-    .about {
+    .about-card {
         max-width: 40%;
     }
 
@@ -169,15 +167,24 @@ footer {
 }
 
 .contact {
+    display: flex;
+    flex-direction: row;
     margin: 20px;
     justify-content: flex-end;
+   
+}
+.contact-card {
+    display: flex;
+    max-width: fit-content;
     gap: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
 }
 
 .contact-item {
     gap: 5px;
 }
 
-.contact-item>* {
+.contact-item * {
     font-size: 0.8rem;
 }
