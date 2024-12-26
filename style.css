@@ -95,11 +95,9 @@ h1 {
 }
 
 .about-card {
-    /* background-color: rgba(0, 0, 0, 0.5); */
     border-radius: 3px;
     padding: 40px;
     max-width: 40%;
-    /* margin-bottom: 60px; */
 }
 
 .about-card>h1 {
