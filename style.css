@@ -169,13 +169,14 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0));
 }
 
 .contact {
     display: flex;
     flex-direction: row;
-    margin: 20px;
-    justify-content: flex-end;
+    margin: 30px;
+    justify-content: center;
    
 }
 .contact-card {
@@ -188,8 +189,26 @@ footer {
 
 .contact-item {
     gap: 5px;
+    text-decoration: none;
+    padding: 2px 1px;
 }
 
 .contact-item * {
     font-size: 0.8rem;
+}
+/* on hover change to inverted colors on insta item */
+.contact-item:hover.instagram {
+    background-color: white;
+    border-radius: 5px;  
+}
+.contact-item:hover > .fa-instagram {
+    color: black;
+}
+/* on hover change to solid envelope item */
+.contact-item:hover .fa-envelope.fa-regular::before {
+    font-weight: 900;
+}
+
+.contact-item:hover * {
+    color: white;
 }
