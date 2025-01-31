@@ -199,10 +199,10 @@ footer {
 /* on hover change to inverted colors on insta item */
 .contact-item:hover.instagram, .contact-item:focus.instagram {
     background-color: white;
-    border-radius: 5px;  
+    border-radius: 5px;
 }
 .contact-item:hover > .fa-instagram, .contact-item:focus > .fa-instagram {
-    color: black;
+    color: black;  
 }
 /* on hover change to solid envelope item */
 .contact-item:hover .fa-envelope.fa-regular::before, .contact-item:focus .fa-envelope.fa-regular::before {
