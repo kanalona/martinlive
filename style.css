@@ -187,6 +187,7 @@ footer {
 }
 
 .contact-item {
+    display: inline-block;
     gap: 5px;
     text-decoration: none;
     padding: 2px 1px;
